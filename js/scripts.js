@@ -98,8 +98,8 @@ $(document).ready(function() {
       rust += 1;
     }
 
-    var event = $("#event").val();
-    if (event === "yes") {
+    var eventDriven = $("#eventDriven").val();
+    if (eventDriven === "yes") {
       csharp += 1;
       go += 1;
       java += 1;
@@ -132,6 +132,49 @@ $(document).ready(function() {
       swift += 1;
     }
     
-    
+    if (cpp >=  6) {
+      $("#cppres").text("C++");
+    }
+    if (csharp >= 6) {
+      $("#csharpres").text("C#");
+    }
+    if (go >= 6) {
+      $("#gores").text("Go");
+    }
+    if (java >= 6) {
+      $("#javares").text("Java");
+    }
+    if (javascript >= 6) {
+      $("#jsres").text("Javascript");
+    }
+    if (php >= 6) {
+      $("#phpres").text("PHP");
+    }
+    if (python >= 6) {
+      $("#pythonres").text("Python");
+    }
+    if (ruby >= 6) {
+      $("#rubyres").text("Ruby");
+    }
+    if (perl >= 6) {
+      $("#perlres").text("Perl");
+    }
+    if (rust >= 6) {
+      $("#rustres").text("Rust");
+    }
+    if (swift >= 6) {
+      $("#swiftres").text("Swift");
+    }
+    console.log(csharp);
+    console.log(cpp);
+    console.log(go);
+    console.log(java);
+    console.log(javascript);
+    console.log(php);
+    console.log(python);
+    console.log(ruby);
+    console.log(perl);
+    console.log(rust);
+    console.log(swift);
   });
 });
