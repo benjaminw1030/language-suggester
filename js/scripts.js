@@ -146,7 +146,7 @@ $(document).ready(function() {
       $("#javares").text("Java");
     }
     if (javascript >= 6) {
-      $("#jsres").text("Javascript");
+      $("#jsres").text("JavaScript");
     }
     if (php >= 6) {
       $("#phpres").text("PHP");
