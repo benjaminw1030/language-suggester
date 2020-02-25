@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $("#language").submit(function(event) {
+    $(".program").hide();
     event.preventDefault();
-    $("#cppres, #csharpres, #gores, #javares, #jsres, #phpres, #pythonres, #rubyres, #perlres, #rustres, #swiftres").empty();
     var cpp = 0;
     var csharp = 0;
     var go = 0;
@@ -134,37 +134,37 @@ $(document).ready(function() {
     }
     
     if (cpp >=  6) {
-      $("#cppres").text("C++");
+      $("#cppres").show();
     }
     if (csharp >= 6) {
-      $("#csharpres").text("C#");
+      $("#csharpres").show();
     }
     if (go >= 6) {
-      $("#gores").text("Go");
+      $("#gores").show();
     }
     if (java >= 6) {
-      $("#javares").text("Java");
+      $("#javares").show();
     }
     if (javascript >= 6) {
-      $("#jsres").text("JavaScript");
+      $("#jsres").show();
     }
     if (php >= 6) {
-      $("#phpres").text("PHP");
+      $("#phpres").show();
     }
     if (python >= 6) {
-      $("#pythonres").text("Python");
+      $("#pythonres").show();
     }
     if (ruby >= 6) {
-      $("#rubyres").text("Ruby");
+      $("#rubyres").show();
     }
     if (perl >= 6) {
-      $("#perlres").text("Perl");
+      $("#perlres").show();
     }
     if (rust >= 6) {
-      $("#rustres").text("Rust");
+      $("#rustres").show();
     }
     if (swift >= 6) {
-      $("#swiftres").text("Swift");
+      $("#swiftres").show();
     }
     console.log(csharp);
     console.log(cpp);
