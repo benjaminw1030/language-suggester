@@ -9,30 +9,68 @@
   </head>
   <body>
     <div class="container">
-      <h1>Language Suggester</h1>
-      <p>Choose yes or no from the following options to determine which programming language or languages might be best for your purposes:</p>
-      <form id="language">  <!-- C++, C#, Go, Java, Javascript, Perl, PHP, Python, Ruby, Rust, Swift -->
+      <h1>Programming Language Suggester</h1>
+      <br>
+      <h5>Select yes or no from the following options to determine which programming language or languages might be best for your purposes:</h5>
+      <form id="language">
+        <br>
         <p>I want my language to be <strong>object-oriented</strong> and have reusable components which may share properties or behaviors.</p> 
+        <select class="form-control" id="object">
+          <option>yes</option>
+          <option>no</option>
+        </select>
         <!--Yes: C++, C#, Java, Javascript, Perl, PHP, Python, Ruby, Rust, Swift-->
         <!--No: Go-->
+        <br>
         <p>I want my language to be <strong>functional</strong> and use the evaluation of mathematical functions to carry out a program.</p>
+        <select class="form-control" id="functional">
+          <option>yes</option>
+          <option>no</option>
+        </select>
         <!--Yes: C++, C#, Java, Javascript, Perl, PHP, Python, Ruby, Rust, Swift-->
         <!--No: Go-->
+        <br>
         <p>I want my language to be <strong>procedural</strong> and follow commands in order.</p>
+        <select class="form-control" id="procedural">
+          <option>yes</option>
+          <option>no</option>
+        </select>
         <!--Yes: C++, C#, Go, Java, Javascript, Perl, PHP, Python, Rust, Swift-->
         <!--No: Ruby-->
+        <br>
         <p>I want my language to be <strong>generic</strong>, with code that can be used without specification of type.</p>
+        <select class="form-control" id="generic">
+          <option>yes</option>
+          <option>no</option>
+        </select>
         <!--Yes: C++, C#, Java, Perl, Python, Rust, Swift-->
         <!--No: Javascript, PHP, Ruby-->
+        <br>
         <p>I want my language to be <strong>reflective</strong> and be able to use information from other code.</p>
+        <select class="form-control" id="reflective">
+          <option>yes</option>
+          <option>no</option>
+        </select>
         <!--Yes: C#, Go, Java, Javascript, Perl, PHP, Python, Ruby, Swift-->
         <!--No: C++, Rust-->
+        <br>
         <p>I want my language to be <strong>event-driven</strong>, where code can triggered by specific events.</p>
+        <select class="form-control" id="event">
+          <option>yes</option>
+          <option>no</option>
+        </select>
         <!--Yes: C#, Go, Java, Javascript, Perl, PHP, Python, Rust, Swift-->
         <!--No: C++, Perl, PHP, Ruby-->
+        <br>
         <p>I want my language to be <strong>standardized</strong> with documentation and specifications stating what it should be used for.</p>
+        <select class="form-control" id="standardized">
+          <option>yes</option>
+          <option>no</option>
+        </select>
         <!--Yes: C++, C#, Go, Java, Javascript, PHP, Python, Ruby-->
         <!--No: Perl, Rust, Swift-->
+        <br>
+        <button type="submit" class="btn-light">Suggest Language(s)</button>
       </form>
       <div id="result">
 
