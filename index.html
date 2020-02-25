@@ -9,17 +9,30 @@
   </head>
   <body>
     <div class="container">
-      <h1>Language Picker</h1>
-      <p>Answer the following questions below to determine which programming language is best for your purposes:</p>
-      <form id="language">
-        <p>I want my language to be <strong>imperative</strong> and list a sequence of steps to describe what the program will accomplish.</p>
-        <p>I want my language to be <strong>object-oriented</strong> and have reusable components which may share properties or behaviors.</p>
+      <h1>Language Suggester</h1>
+      <p>Choose yes or no from the following options to determine which programming language or languages might be best for your purposes:</p>
+      <form id="language">  <!-- C++, C#, Go, Java, Javascript, Perl, PHP, Python, Ruby, Rust, Swift -->
+        <p>I want my language to be <strong>object-oriented</strong> and have reusable components which may share properties or behaviors.</p> 
+        <!--Yes: C++, C#, Java, Javascript, Perl, PHP, Python, Ruby, Rust, Swift-->
+        <!--No: Go-->
         <p>I want my language to be <strong>functional</strong> and use the evaluation of mathematical functions to carry out a program.</p>
+        <!--Yes: C++, C#, Java, Javascript, Perl, PHP, Python, Ruby, Rust, Swift-->
+        <!--No: Go-->
         <p>I want my language to be <strong>procedural</strong> and follow commands in order.</p>
+        <!--Yes: C++, C#, Go, Java, Javascript, Perl, PHP, Python, Rust, Swift-->
+        <!--No: Ruby-->
         <p>I want my language to be <strong>generic</strong>, with code that can be used without specification of type.</p>
+        <!--Yes: C++, C#, Java, Perl, Python, Rust, Swift-->
+        <!--No: Javascript, PHP, Ruby-->
         <p>I want my language to be <strong>reflective</strong> and be able to use information from other code.</p>
+        <!--Yes: C#, Go, Java, Javascript, Perl, PHP, Python, Ruby, Swift-->
+        <!--No: C++, Rust-->
         <p>I want my language to be <strong>event-driven</strong>, where code can triggered by specific events.</p>
+        <!--Yes: C#, Go, Java, Javascript, Perl, PHP, Python, Rust, Swift-->
+        <!--No: C++, Perl, PHP, Ruby-->
         <p>I want my language to be <strong>standardized</strong> with documentation and specifications stating what it should be used for.</p>
+        <!--Yes: C++, C#, Go, Java, Javascript, PHP, Python, Ruby-->
+        <!--No: Perl, Rust, Swift-->
       </form>
       <div id="result">
 
