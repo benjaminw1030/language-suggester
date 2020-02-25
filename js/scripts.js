@@ -1,6 +1,7 @@
 $(document).ready(function() {
-  $("form#language").submit(function() {
+  $("#language").submit(function(event) {
     event.preventDefault();
+    $("#cppres, #csharpres, #gores, #javares, #jsres, #phpres, #pythonres, #rubyres, #perlres, #rustres, #swiftres").empty();
     var cpp = 0;
     var csharp = 0;
     var go = 0;
