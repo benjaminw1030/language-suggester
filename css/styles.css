@@ -1,3 +1,26 @@
-#cppres, #csharpres, #gores, #javares, #jsres, #phpres, #pythonres, #rubyres, #perlres, #rustres, #swiftres {
-  display: none
+body {
+  background-color: lightcyan;
+}
+
+.jumbotron {
+  margin-top: 5px;
+  background-color: lightskyblue;
+}
+
+#cppres, #csharpres, #gores, #javares, #jsres, #phpres, #pythonres, #rubyres, #perlres, #rustres, #swiftres, #none {
+  display: none;
+  vertical-align: center;
+}
+
+.program {
+  vertical-align: center;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.program> img {
+  float: left;
+  height: 25px;
+  margin-right: 5px;
 }

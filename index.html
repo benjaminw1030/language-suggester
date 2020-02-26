@@ -9,63 +9,65 @@
   </head>
   <body>
     <div class="container">
-      <h1>Programming Language Suggester</h1>
+      <div class="jumbotron text-center">
+        <h1>Programming Language Suggester</h1>
+      </div>
       <br>
       <h5>Select yes or no from the following options to determine which programming language or languages might be best for your purposes:</h5>
       <form id="language">
         <br>
         <p>I want my language to be <strong>object-oriented</strong> and have reusable components which may share properties or behaviors.</p> 
-        <select class="form-control" id="object">
-          <option>yes</option>
-          <option>no</option>
+        <select class="form-control col-md-1" id="object">
+          <option>Yes</option>
+          <option>No</option>
         </select>
         <!--Yes: C++, C#, Java, Javascript, Perl, PHP, Python, Ruby, Rust, Swift-->
         <!--No: Go-->
         <br>
         <p>I want my language to be <strong>functional</strong> and use the evaluation of mathematical functions to carry out a program.</p>
-        <select class="form-control" id="functional">
-          <option>yes</option>
-          <option>no</option>
+        <select class="form-control col-md-1" id="functional">
+          <option>Yes</option>
+          <option>No</option>
         </select>
         <!--Yes: C++, C#, Java, Javascript, Perl, PHP, Python, Ruby, Rust, Swift-->
         <!--No: Go-->
         <br>
         <p>I want my language to be <strong>procedural</strong> and follow commands in order.</p>
-        <select class="form-control" id="procedural">
-          <option>yes</option>
-          <option>no</option>
+        <select class="form-control col-md-1" id="procedural">
+          <option>Yes</option>
+          <option>No</option>
         </select>
         <!--Yes: C++, C#, Go, Java, Javascript, Perl, PHP, Python, Rust, Swift-->
         <!--No: Ruby-->
         <br>
         <p>I want my language to be <strong>generic</strong>, with code that can be used without specification of type.</p>
-        <select class="form-control" id="generic">
-          <option>yes</option>
-          <option>no</option>
+        <select class="form-control col-md-1" id="generic">
+          <option>Yes</option>
+          <option>No</option>
         </select>
         <!--Yes: C++, C#, Java, Perl, Python, Rust, Swift-->
         <!--No: Javascript, PHP, Ruby-->
         <br>
         <p>I want my language to be <strong>reflective</strong> and be able to use information from other code.</p>
-        <select class="form-control" id="reflective">
-          <option>yes</option>
-          <option>no</option>
+        <select class="form-control col-md-1" id="reflective">
+          <option>Yes</option>
+          <option>No</option>
         </select>
         <!--Yes: C#, Go, Java, Javascript, Perl, PHP, Python, Ruby, Swift-->
         <!--No: C++, Rust-->
         <br>
         <p>I want my language to be <strong>event-driven</strong>, where code can triggered by specific events.</p>
-        <select class="form-control" id="eventDriven">
-          <option>yes</option>
-          <option>no</option>
+        <select class="form-control col-md-1" id="eventDriven">
+          <option>Yes</option>
+          <option>No</option>
         </select>
         <!--Yes: C#, Go, Java, Javascript, Perl, PHP, Python, Rust, Swift-->
         <!--No: C++, Perl, PHP, Ruby-->
         <br>
         <p>I want my language to be <strong>standardized</strong> with documentation and specifications stating what it should be used for.</p>
-        <select class="form-control" id="standardized">
-          <option>yes</option>
-          <option>no</option>
+        <select class="form-control col-md-1" id="standardized">
+          <option>Yes</option>
+          <option>No</option>
         </select>
         <!--Yes: C++, C#, Go, Java, Javascript, PHP, Python, Ruby-->
         <!--No: Perl, Rust, Swift-->
@@ -73,50 +75,53 @@
         <button type="submit" class="btn-light">Suggest Language(s)</button>
       </form>
       <br>
-      <div class="results">
-        <div id="cppres" class="program">
-          <img src="img/cplus.png" height="25">
-          <p> C++</p>
+      <div class="results row">
+        <div id="cppres" class="program col-md-2">
+          <img src="img/cplus.png">
+          <p>C++</p>
         </div>
-        <div id="csharpres" class="program">
-          <img src="img/csharp.png" height="25">
-          <p> C#</p>
+        <div  id="csharpres" class="program col-md-2">
+          <img src="img/csharp.png">
+          <p>C#</p>
         </div>
-        <div id="gores" class="program">
-          <img src="img/go.png" height="25">
-          <p> Go</p>
+        <div id="gores" class="program col-md-2">
+          <img src="img/go.png">
+          <p>Go</p>
         </div>
-        <div id="javares" class="program">
-          <img src="img/java.png" height="25">
-          <p> Java</p>
+        <div id="javares" class="program col-md-2">
+          <img src="img/java.png">
+          <p>Java</p>
         </div>
-        <div id="jsres" class="program">
-          <img src="img/javascript.png" height="25">
-          <p> JavaScript</p>
+        <div id="jsres" class="program col-md-2">
+          <img src="img/javascript.png">
+          <p>JavaScript</p>
         </div>
-        <div id="phpres" class="program">
-          <img src="img/php.png" height="25">
-          <p> PHP</p>
+        <div id="phpres" class="program col-md-2">
+          <img src="img/php.png">
+          <p>PHP</p>
         </div>
-        <div id="pythonres" class="program">
-          <img src="img/python.png" height="25">
-          <p> Python</p>
+        <div id="pythonres" class="program col-md-2">
+          <img src="img/python.png">
+          <p>Python</p>
+       </div>
+        <div id="rubyres" class="program col-md-2">
+          <img src="img/ruby.png">
+          <p>Ruby</p>
         </div>
-        <div id="rubyres" class="program">
-          <img src="img/ruby.png" height="25">
-          <p> Ruby</p>
+        <div id="perlres" class="program col-md-2">
+          <img src="img/perl.png">
+          <p>Perl</p>
         </div>
-        <div id="perlres" class="program">
-          <img src="img/perl.png" height="25">
-          <p> Perl</p>
-        </div>
-        <div id="rustres" class="program">
-          <img src="img/rust.png" height="25">
-          <p> Rust</p>
-        </div>
-        <div id="swiftres" class="program">
-          <img src="img/swift.png" height="25">
-          <p> Swift</p>
+        <div id="rustres" class="program col-md-2">
+          <img src="img/rust.png">
+          <p>Rust</p>
+        </div>  
+        <div id="swiftres" class="program col-md-2">
+          <img src="img/swift.png">
+          <p>Swift</p>
+        </div> 
+        <div id="none" class="program">
+          <p>No known languages closely match your criteria.</p>
         </div>
       </div>
     </div>

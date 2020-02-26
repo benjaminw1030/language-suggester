@@ -15,7 +15,7 @@ $(document).ready(function() {
     var swift = 0;
 
     var object = $("#object").val();
-    if (object === "yes") {
+    if (object === "Yes") {
       cpp += 1;
       csharp += 1;
       java += 1;
@@ -32,7 +32,7 @@ $(document).ready(function() {
     }
 
     var functional = $("#functional").val();
-    if (functional === "yes") {
+    if (functional === "Yes") {
       cpp += 1;
       csharp += 1;
       java += 1;
@@ -49,7 +49,7 @@ $(document).ready(function() {
     }    
 
     var procedural = $("#procedural").val();
-    if (procedural === "yes") {
+    if (procedural === "Yes") {
       cpp += 1;
       csharp += 1;
       go += 1;
@@ -66,7 +66,7 @@ $(document).ready(function() {
     }
 
     var generic = $("#generic").val();
-    if (generic === "yes") {
+    if (generic === "Yes") {
       cpp += 1;
       csharp += 1;
       go += 1;
@@ -83,7 +83,7 @@ $(document).ready(function() {
     }
     
     var reflective = $("#reflective").val();
-    if (reflective === "yes") {
+    if (reflective === "Yes") {
       csharp += 1;
       go += 1;
       java += 1;
@@ -100,7 +100,7 @@ $(document).ready(function() {
     }
 
     var eventDriven = $("#eventDriven").val();
-    if (eventDriven === "yes") {
+    if (eventDriven === "Yes") {
       csharp += 1;
       go += 1;
       java += 1;
@@ -117,7 +117,7 @@ $(document).ready(function() {
     }
 
     var standardized = $("#standardized").val();
-    if (standardized === "yes") {
+    if (standardized === "Yes") {
       cpp += 1;
       csharp += 1;
       go += 1;
@@ -165,6 +165,9 @@ $(document).ready(function() {
     }
     if (swift >= 6) {
       $("#swiftres").show();
+    }
+    if (cpp < 6 && csharp < 6 && go < 6 && java < 6 && javascript < 6 && php < 6 && python < 6 && ruby < 6 && perl < 6 && rust < 6 && swift < 6) {
+      $("#none").show();
     }
     console.log(csharp);
     console.log(cpp);
