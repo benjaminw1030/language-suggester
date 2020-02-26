@@ -13,7 +13,7 @@ _This program will allow a user to choose between a variety of programming langu
 * _Download the necessary files_
 * _Open index.html in a web browser._
 
-_You can also visit the page directly at https://benjaminw1030.github.io/language-suggester_
+_You can also visit the page directly at https://benjaminw1030.github.io/language-suggester/_
 
 ## Known Bugs
 
